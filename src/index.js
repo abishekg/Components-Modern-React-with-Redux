@@ -9,25 +9,25 @@ const App = () => {
     <div className="ui container comments">
       <ApprovalCard>
         <CommentDetail
-          author="Sam"
-          timeAgo="Today at 4:45pm"
-          content="Nice Blog Post!"
+          author={faker.name.firstName()}
+          timeAgo={faker.date.recent().toLocaleString()}
+          content={faker.random.words(5)}
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
-          author="Alex"
-          timeAgo="Today at 2:00pm"
-          content="Great Going"
+          author={faker.name.firstName()}
+          timeAgo={faker.date.recent().toLocaleString()}
+          content={faker.random.words(5)}
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
-          author="Jane"
-          timeAgo="Yesterday at 8:00pm"
-          content="Welcome"
+          author={faker.name.firstName()}
+          timeAgo={faker.date.recent().toLocaleString()}
+          content={faker.random.words(5)}
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
